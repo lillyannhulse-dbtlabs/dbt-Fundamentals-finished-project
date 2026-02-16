@@ -8,3 +8,12 @@ macros:
       - name: role
         type: string
         description: role we want to grant privs to, by default is our target role
+  - name: union_tables_by_prefix
+    description: a macro that will union tables by their prefix 
+    arguments:
+      - name: database
+        description: the database with the tables in
+      - name: schema
+        description: the schema with the tables 
+      - name: prefix
+        description: the prefix the tables will be unioned on 

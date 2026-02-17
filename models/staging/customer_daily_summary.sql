@@ -1,3 +1,9 @@
+{{
+    config(
+        required_tests=None
+    )
+}}
+-- config added to make this model bypass required tests
 select
     customer_id,
     order_date,

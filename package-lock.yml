@@ -5,4 +5,7 @@ packages:
   - name: codegen
     package: dbt-labs/codegen
     version: 0.14.0
-sha1_hash: c6118f4474133c4f016227394017f5772aa30739
+  - name: dbt_meta_testing
+    package: tnightengale/dbt_meta_testing
+    version: 0.3.6
+sha1_hash: 08f3fee5fd4de429d8ab4aff247f08e98ab6a04e

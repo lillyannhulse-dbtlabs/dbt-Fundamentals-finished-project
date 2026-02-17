@@ -40,3 +40,4 @@ models:
     # Applies to all files under models/example/
     staging:
       +required_tests: {"unique.*|not_null": 2}
+

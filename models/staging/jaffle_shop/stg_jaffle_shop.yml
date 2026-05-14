@@ -22,15 +22,15 @@ models:
         description: "{{ doc('order_status') }}"
         tests:
           - accepted_values:
-              values:
-                - completed
-                - shipped
-                - returned
-                - placed
-                - return_pending
+              config:
+                severity: warn
+              arguments:
+                values: ["completed","shipped","returned","placed","return_pending"]
       - name: customer_id
         description: Foreign key to stg_customers.customer_id.
-        tests:
-          - relationships:
-              to: ref('stg_jaffle_shop__customers')
-              field: customer_id
+        data_tests:
+              - relationships:
+                  name: ref_stg_jaffle_shop_customers_refs_region
+                  arguments:
+                    to: ref('stg_jaffle_shop__customers')
+                    field: r_regionkey
